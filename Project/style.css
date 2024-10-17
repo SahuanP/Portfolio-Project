@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --bg-color: #15161a;
+  --gradient-color-1: #642b90;
+  --gradient-color-2: #161150;
+  --gradient-color-3: #1d092e;
+  --role-name-color: #c19cfe;
+  --time-font-color: #585d6c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+  color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: linear-gradient(
+    to bottom,
+    var(--gradient-color-1) -20%,
+    var(--gradient-color-2) 7%,
+    var(--bg-color) 30%
+  );
+  max-width: 60vw;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+header .info p {
+  padding-top: 5px;
+  font-weight: 400;
+}
+
+header .location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 100;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+header .location img {
+  margin-right: 18px;
+  max-width: 3%;
+}
+
+header .header-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+header .personal-link {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+header .personal-link img {
+  max-width: 3%;
+}
+
+header .personal-link span {
+  padding-left: 15px;
+}
+
+header p {
+  font-weight: 300;
+  padding-top: 65px;
+  font-size: large;
+}
+
+section .section-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: solid var(--time-font-color) 1px;
+  padding-top: 25px;
+}
+
+section .section-title img {
+  max-width: 5%;
+  padding-right: 7px;
+}
+
+section .company-box {
+  padding-top: 30px;
+}
+
+section .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+section .title span {
+  font-weight: 100;
+}
+
+section .role-title {
+  font-weight: 100;
+  color: var(--role-name-color);
+}
+
+section .about-role {
+  padding-top: 15px;
+}
+
+section li::marker {
+  color: var(--role-name-color);
+}
+
+section .skill {
+  padding-top: 35px;
+  font-size: larger;
+}
+
+section .skill li {
+  margin-top: 10px;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.education span {
+  color: var(--role-name-color);
+}
+
+.education p {
+  padding-top: 35px;
+  font-weight: 200;
+}
+
+section .education-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  padding-top: 25px;
+}
+
+section .education-title span {
+  color: var(--time-font-color);
+}
+
+section .languages-box {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+section .single-language {
+  padding-right: 200px;
+}
+
+section .single-language h3 {
+  padding-bottom: 7px;
+  color: var(--role-name-color);
+}
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.portfolio span {
+  border-radius: 15px;
+  border: solid 2px var(--time-font-color);
+  padding: 10px;
+}
+
+.portfolio a {
+  color: #c19cfe;
+  text-decoration: none;
+}
