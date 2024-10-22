@@ -64,7 +64,7 @@ header .personal-link {
 }
 
 header .personal-link img {
-  max-width: 3%;
+  max-width: 100%;
 }
 
 header .personal-link span {
